@@ -1,0 +1,50 @@
+<app-private-nav-bar></app-private-nav-bar>
+
+<div class="valign-wrapper" *ngIf="loading">
+    <div class="center-align">
+        
+        <div class="preloader-wrapper big active ">
+            <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                    <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="errorBox">
+
+        <div *ngIf="!loading && !accounts" class="card grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Lo sentimos</span>
+                <p>
+                    ocurrió un error al cargar las cuentas
+                </p>
+            </div>
+            <div class="card-action white-text">
+                <a (click)="reload()">intentar de nuevo</a>
+            </div>
+        </div>
+</div>
+
+<p-accordion *ngIf="accounts">
+    <p-accordionTab header="Cuentas" [selected]="true">
+        <ul >
+            <app-balance-item *ngFor="let item of accounts.accounts; index as i " [item]="item" routerLink="/balance/balance/accouts/{{i}}"></app-balance-item>
+        </ul>
+    </p-accordionTab>
+    <p-accordionTab header="Créditos">
+        <ul >
+            <app-balance-item  *ngFor="let item of accounts.credits" [item]="item"></app-balance-item>
+        </ul>
+    </p-accordionTab>
+    <p-accordionTab header="Inversiones">
+        <ul >
+            <app-balance-item  *ngFor="let item of accounts.investments" [item]="item"></app-balance-item>
+        </ul> 
+    </p-accordionTab>
+</p-accordion>

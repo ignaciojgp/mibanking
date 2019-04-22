@@ -1,0 +1,172 @@
+{
+    "posts": [
+        { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+        { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" },
+    "balance":{
+        "data":{
+            "accounts":[
+                {
+                    "id":0,
+                    "name":"primer cuenta",
+                    "amount": 200,
+                    "account": "7894 5612 3323 4568"
+                },
+                {
+                    "id":1,
+                    "name":"segunda cuenta",
+                    "amount": 100,
+                    "account": "7894 5612 3323 4568"
+                },
+                {
+                    "id":2,
+                    "name":"tercer cuenta",
+                    "amount": 300,
+                    "account": "7894 5612 3323 4568"
+                }
+            ],
+            "credits":[
+                {
+                    "id":0,
+                    "name":"primer crédito",
+                    "amount": 200,
+                    "account": "7894 5612 3323 4568"
+                },
+                {   
+                    "id":1,
+                    "name":"segunda crédito",
+                    "amount": 100,
+                    "account": "7894 5612 3323 4568"
+                }
+                
+            ],
+            "investments":[
+                {
+                    "id":0,
+                    "name":"primer inversión",
+                    "amount": 200,
+                    "account": "7894 5612 3323 4568"
+                }
+            ]
+        }
+        
+        
+        
+    },
+    "movements":[
+        {
+            "id":0,
+            "movs":[
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"pago de lana",
+                    "amount":5812
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"pago de renta",
+                    "amount":-25812
+                },    
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"prestamo",
+                    "amount":5812.35
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"totalplay",
+                    "amount":-1812
+                }
+            ]
+        },
+        {
+            "id":1,
+            "movs":[
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"pago de lana",
+                    "amount":5812
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"pago de renta",
+                    "amount":-25812
+                },    
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"prestamo",
+                    "amount":5812.35
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"totalplay",
+                    "amount":-1812
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"prestamo",
+                    "amount":5812.35
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"totalplay",
+                    "amount":-1812
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"totalplay",
+                    "amount":-1812
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"prestamo",
+                    "amount":5812.35
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"totalplay",
+                    "amount":-1812
+                }
+            ]
+        },
+        {
+            "id":2,
+            "movs":[
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"pago de lana",
+                    "amount":5812
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"pago de renta",
+                    "amount":-25812
+                },    
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"prestamo",
+                    "amount":5812.35
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"totalplay",
+                    "amount":-1812
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"prestamo",
+                    "amount":5812.35
+                },
+                {
+                    "date":"2019-04-22T00:01:58+00:00",
+                    "reference":"totalplay",
+                    "amount":-1812
+                }
+            ]
+        }
+    ]
+    
+}

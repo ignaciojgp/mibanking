@@ -1,0 +1,13 @@
+<div class="card-panel" *ngIf="item">
+  <span class="badge">
+    <b>
+      {{item.amount | currency}}
+    </b> 
+  </span>
+  <b>
+    {{item.name}}
+  </b>
+  <p class="grey-text">
+    {{item.account}}
+  </p>
+</div>

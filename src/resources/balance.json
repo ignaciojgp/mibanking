@@ -1,0 +1,55 @@
+{
+    "data":{
+        "accounts":[
+            {
+                "name":"primer cuenta",
+                "amount": 200,
+                "account": "7894 5612 3323 4568"
+            },
+            {
+                "name":"segunda cuenta",
+                "amount": 100,
+                "account": "7894 5612 3323 4568"
+            },
+            {
+                "name":"tercer cuenta",
+                "amount": 300,
+                "account": "7894 5612 3323 4568"
+            }
+        ],
+        "credits":[
+            {
+                "name":"primer cuenta",
+                "amount": 200,
+                "account": "7894 5612 3323 4568"
+            },
+            {
+                "name":"segunda cuenta",
+                "amount": 100,
+                "account": "7894 5612 3323 4568"
+            },
+            {
+                "name":"tercer cuenta",
+                "amount": 300,
+                "account": "7894 5612 3323 4568"
+            }
+        ],
+        "investments":[
+            {
+                "name":"primer cuenta",
+                "amount": 200,
+                "account": "7894 5612 3323 4568"
+            },
+            {
+                "name":"segunda cuenta",
+                "amount": 100,
+                "account": "7894 5612 3323 4568"
+            },
+            {
+                "name":"tercer cuenta",
+                "amount": 300,
+                "account": "7894 5612 3323 4568"
+            }
+        ]
+    }
+}

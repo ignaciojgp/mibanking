@@ -1,0 +1,34 @@
+<app-private-nav-bar>
+  <a routerLink="/balance/balance" class="white-text"> 
+    <i class="material-icons">arrow_back</i>
+  </a>
+</app-private-nav-bar>
+<div class="page">
+  <app-balance-item [item]="account"></app-balance-item>
+  
+  
+  <p-virtualScroller [value]="movs" scrollHeight="300px" [itemSize]="60">
+      <ng-template pTemplate="item" let-mov>
+        <div class="item">
+
+          <div class="row">
+            <div class="col s12">
+                <b> {{mov.reference}} </b>
+              </div>
+          </div>
+          <div class="row">
+            
+            <div class="col s6">
+              
+              <span class="gray-text">{{mov.date | date:'shortDate'}}</span>
+            </div>
+            <div class="col s6 right-align">
+              <p><b [ngClass]="{'orange-text': mov.amount < 0, 'green-text': mov.amount > 0 }">{{mov.amount | currency }}</b></p>
+            </div>
+
+          </div>
+        </div>
+        
+      </ng-template>
+  </p-virtualScroller>
+</div>
