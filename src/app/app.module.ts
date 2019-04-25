@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
 import { BalanceModule } from './balance/balance.module';
 import { BalanceService } from './services/balance.service';
+import { TransfersModule } from './transfers/transfers.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BalanceService } from './services/balance.service';
     BrowserModule,
     AppRoutingModule,
     LoginModule,
-    BalanceModule
+    BalanceModule,
+    TransfersModule
   ],
   providers: [BalanceService],
   bootstrap: [AppComponent]

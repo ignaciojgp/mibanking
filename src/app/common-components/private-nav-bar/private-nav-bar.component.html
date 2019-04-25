@@ -2,7 +2,17 @@
   <div class="options">
     <ng-content></ng-content>
   </div >
+  <div class="roptions">
+    <i class="material-icons" (click)="menuvisible = !menuvisible">menu</i>
+  </div>
   <div>
     <span class="brand-logo"><img src="/assets/logo-b.svg" alt="" class="logo"></span>
   </div>
+</div>
+<div class="sidenav" [ngClass]="{'show':menuvisible}">
+  <div class="overlay" (click)="menuvisible = !menuvisible"></div>
+  <ul class="z-depth-3 collection" >
+      <li class="collection-item" (click)="navigate('/balance/balance')"><a class="red-text" >Inicio</a></li>
+      <li class="collection-item" (click)="navigate('/transfers/form')"><a class="red-text" >Transferencia</a></li>
+    </ul>
 </div>

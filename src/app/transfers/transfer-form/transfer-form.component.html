@@ -1,0 +1,60 @@
+<app-private-nav-bar>
+  <a routerLink="/balance/balance" class="white-text"> 
+    <i class="material-icons">arrow_back</i>
+  </a>
+</app-private-nav-bar>
+<h2>Transferencias</h2>
+<div class="page">
+  <form>
+    <div class="row">
+      <mz-select-container>
+        <select mz-select
+          id="options-select"
+          [label]="'Cuenta de origen'"
+          [placeholder]="'selecciona una cuenta de origen'"
+          >
+          <optgroup label="Group 1">
+            <option data-icon="assets/select-icon-1.jpg" class="left circle">Option 1</option>
+            <option data-icon="assets/select-icon-2.jpg" class="left circle">Option 2</option>
+          </optgroup>
+          <optgroup label="Group 2">
+            <option data-icon="assets/select-icon-3.jpg" class="left circle">Option 3</option>
+          </optgroup>
+        </select>
+      </mz-select-container>
+    </div>
+    <div>
+        <mz-select-container>
+          <select mz-select
+            id="options-select"
+            [label]="'Cuenta destino'"
+            [placeholder]="'selecciona una cuenta'"
+            >
+            <optgroup label="Group 1">
+              <option data-icon="assets/select-icon-1.jpg" class="left circle">Option 1</option>
+              <option data-icon="assets/select-icon-2.jpg" class="left circle">Option 2</option>
+            </optgroup>
+            <optgroup label="Group 2">
+              <option data-icon="assets/select-icon-3.jpg" class="left circle">Option 3</option>
+            </optgroup>
+          </select>
+        </mz-select-container>
+    </div>
+    <div>
+      <label>
+        Importe
+        <input type="number"/>
+      </label>
+    </div>
+    <div>
+      <label>
+        Concepto
+        <input type="text"/>
+      </label>
+    </div>
+    <div class="options">
+      <button class="waves-effect waves-light btn red">Continuar</button>
+    </div>
+  </form>
+
+</div>

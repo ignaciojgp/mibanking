@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-private-nav-bar',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivateNavBarComponent implements OnInit {
 
-  constructor() { }
+  menuvisible = false;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  navigate(route: string){
+    console.log(route);
+    this.router.navigateByUrl(route);
+
   }
 
 }
